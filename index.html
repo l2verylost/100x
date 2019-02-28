@@ -40,6 +40,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </head>
 <script src='../ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js' type='text/javascript'></script>
 <style>
+<!-- Facebook Popup Widget START --><!-- Brought to you by www.JasperRoberts.com - www.TheBlogWidgets.com -->
+<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js' type='text/javascript'></script>
+<style>
 #fanback {
 display:none;
 background:rgba(0,0,0,0.8);
@@ -56,8 +59,8 @@ height:100%;
 }
 #JasperRoberts {
 background:white;
-width:402px;
-height:230px;
+width:420px;
+height:270px;
 position:absolute;
 top:58%;
 left:63%;
@@ -71,12 +74,24 @@ border-radius: 5px;
 margin: -220px 0 0 -375px;
 }
 #TheBlogWidgets {
-    position: absolute;
-    top: -12px;
-    right: -8px;
-    color: white;
-    font-size: 25px;
-    text-shadow: 0 0 20px rgba(0,0,0,0.3);
+float:right;
+cursor:pointer;
+background:url(http://3.bp.blogspot.com/-NRmqfyLwBHY/T4nwHOrPSzI/AAAAAAAAAdQ/8b9O7O1q3c8/s1600/TheBlogWidgets.png) repeat;
+height:15px;
+padding:20px;
+position:relative;
+padding-right:40px;
+margin-top:-20px;
+margin-right:-22px;
+}
+.remove-borda {
+height:1px;
+width:366px;
+margin:0 auto;
+background:#F3F3F3;
+margin-top:16px;
+position:relative;
+margin-left:20px;
 }
 #linkit,#linkit a.visited,#linkit a,#linkit a:hover {
 color:#80808B;
@@ -118,11 +133,12 @@ return (result = new RegExp('(?:^|; )' + encodeURIComponent(key) + '=([^;]*)').e
 <script type='text/javascript'>
 jQuery(document).ready(function($){
 if($.cookie('popup_user_login') != 'yes'){
-$('#fanback').delay(2000).fadeIn('medium');
+$('#fanback').delay(10000).fadeIn('medium');
 $('#TheBlogWidgets, #fan-exit').click(function(){
 $('#fanback').stop().fadeOut('medium');
 });
 }
+
 });
 </script>
 <div id='fanback'>
@@ -130,17 +146,13 @@ $('#fanback').stop().fadeOut('medium');
 </div>
 <div id='JasperRoberts'>
 <div id='TheBlogWidgets'>
-	<i class="fa fa-times"></i>
 </div>
-
-    <div>
-        
-        <iframe allowtransparency='true' frameborder='0' scrolling='no' src='http://www.facebook.com/plugins/likebox.php?%20%20%20%20%20%20%20%20href=http://www.facebook.com/L2verylostcom&amp;width=402&amp;height=255&amp;colorscheme=light&amp;show_faces=true&amp;show_border=false&amp;stream=false&amp;header=false'
-        style='border: none; overflow: hidden; height: 230px;'>
-		</iframe>
-    </div>
-
-<center>
+<div class='remove-borda'>
+</div>
+<iframe allowtransparency='true' frameborder='0' scrolling='no' src='//www.facebook.com/plugins/likebox.php?
+href=http://www.facebook.com/l2verylost&width=402&height=255&colorscheme=light&show_faces=true&show_border=false&stream=false&header=false'
+style='border: none; overflow: hidden; margin-top: -19px; width: 402px; height: 230px;'></iframe><center>
+<span style="color:#a8a8a8;font-size:8px;" id="linkit">Powered by <a style="color:#a8a8a8;font-size:8px;" href="http://l2verylost.com">Jasper Roberts</a> - <a style="color:#a8a8a8;font-size:8px;" href="http://www.l2verylost.com">Blog</a></span></center>
 </div>
 </div>
 <!-- Facebook Popup Widget END. Brought to you by www.JasperRoberts.com - www.TheBlogWidgets.com -->
